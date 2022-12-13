@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+h1{
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+
+form{
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   border: groove 5px  ;
+   border-radius: 5px;
+   border-color: #d0ccd1;
+   align-items: center;
+    padding: 0px 0px 50px 0px;
+   animation-name: cima;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-delay: 2s;
+}
+ 
+@keyframes cima{
+    0% {border-top-color:#d0ccd1;}
+    100% {border-top-color:#13a8fe;}
+}
+@keyframes esquerda{
+    
+}
+
+input{
+    width: 200px;
+    -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 5px;
+}
+input:hover{
+    border: solid 2px #0028ff ;
+}
+input:hover:hover{
+    box-shadow: 4px 4px #dfe1e9 ;
+}
+input[type= text]:focus{
+    border: solid 2px #0028ff;
+    
+}
+
+button{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: auto;
+    padding-right: auto;
+   background-color: #0028ff;
+   border-radius: 5px;
+   
+    
+}
+p{
+    font-family: Trebuchet MS, sans-serif;
+    color: #c0c0c0;
+}
