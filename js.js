@@ -7,7 +7,9 @@ console.log(resultNumber);
 
 
 if (!resultNumber){
-   document.getElementById("resultado").innerHTML = "Deve conter numeros"
+    document.getElementById("resultado").innerHTML = "Deve conter numeros"
+    document.getElementsByTagName("div").style.backgroundColor='red';
+    
 }else{
     document.getElementById("resultado").innerHTML = " "
 }

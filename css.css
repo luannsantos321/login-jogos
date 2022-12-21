@@ -1,45 +1,65 @@
-body{
-    background-color: black;
-}
+
+body{ background-image: linear-gradient(260deg,#ede6db, white);}
 h1{
     font-family: Trebuchet MS, sans-serif;
     text-align: center;
-    color: aliceblue;
+    color: black;
+    
+}
+.conteiner2{
+    display: flex;
+    margin-top: 300px;
+    flex-direction: row;
+    justify-content: center;
     
 }
 
-
 form{
     position: relative;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    margin-left: 500px;
-    margin-right: 500px;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   border-color: #d0ccd1;
-   background-color: #8c8c8c;
-   align-items: center;
-    padding: 0px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: #8c8c8c;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    border-radius: 3px 0 0 3px;
+    width: 300px;
+    height: 300px;
  
    
    
 }
-.conteiner2{
-    display: block;
+@keyframes cores{
+    0% {background-image: linear-gradient(180deg, yellow,red, purple,green,blue);}
+    25% {background-image: linear-gradient(180deg, blue,yellow, red,purple,green);}
+    50% {background-image: linear-gradient(180deg, green,blue yellow,red,purple);}
+    100% {background-image: linear-gradient(180deg, purple,green, blue,yellow,red);}
 }
 
 .uno{
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 475px;
-   background-color: white;
-   padding-bottom: 250px;
-   padding-top: 0px;
+   width: 15px;
+   height: 300px;
+   border-radius: 10px 0 0 10px;
+   background-image: linear-gradient(180deg, yellow,red, purple,green,blue);
+   animation: 2s linear 0s infinite running cores;
+   
+}
 
+@keyframes coresdois{
+    0% {background-image: linear-gradient(180deg, yellow,red, purple,green,blue);}
+    25% {background-image: linear-gradient(180deg, blue,yellow, red,purple,green);}
+    50% {background-image: linear-gradient(180deg, green,blue yellow,red,purple);}
+    100% {background-image: linear-gradient(180deg, purple,green, blue,yellow,red);}
+}
+.dos{
+    display: flex;
+    float: left;
+    width: 15px;
+    height: 300px;
+    border-radius: 0px 10px 10px 0px;
+    background-image: linear-gradient(180deg, yellow,red, purple,green,blue);
+    animation: 2s linear 0s infinite running coresdois;
 }
  
 
@@ -77,4 +97,7 @@ button{
 p{
     font-family: Trebuchet MS, sans-serif;
     color: #c0c0c0;
+}
+#resultado{
+    color: orange;
 }
